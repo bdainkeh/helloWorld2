@@ -1,6 +1,6 @@
 // Change text functionality
 document.getElementById("changeTextBtn").addEventListener("click", function () {
-    document.getElementById("myParagraph").innerText = "The text has been changed!";
+    document.getElementById("myParagraph").innerText = "The text has been changed! But not by a lot.";
 });
 
 // Greeting form functionality
