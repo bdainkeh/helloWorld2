@@ -1,41 +1,56 @@
+/* ===== Site-wide helpers (works with Bootstrap) ===== */
+body { padding-bottom: 64px; }
+main.container { min-height: 60vh; }
+.navbar-brand { font-weight: 600; }
+code { font-size: .95rem; }
+img { max-width: 100%; height: auto; } /* responsive images */
+
 /* ===== Paragraphs ===== */
 p {
-    font-size: 12px;
-    color: #000000;
+  font-size: 12px;
+  color: #000000;
+  margin-bottom: 0.75rem;
 }
 
 /* ===== H2 Headers ===== */
 h2 {
-    color: darkred;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    Font-weight: bold;
+  color: darkred;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;     /* fixed capitalization from Font-weight */
+  margin-top: 1rem;
 }
 
 /* ===== Tables ===== */
+/* border-collapse only belongs on the table element */
+table {
+  border-collapse: collapse;
+}
 table, th, td {
-    border-style: solid;
-    border-width: 2px;
-    border-color: #444444;
-    border-collapse: collapse;
-    padding: 6px;
+  border: 2px solid #444444;
+}
+th, td {
+  padding: 6px;
 }
 
 /* ===== Paragraph with ID (third paragraph) ===== */
-#unique-paragraph { /* target the paragraph with the specific ID */
-    background-color: #7705f8;
-    font-style: italic;
-    padding: 10px;
+#unique-paragraph {
+  background-color: #7705f8;
+  font-style: italic;
+  padding: 10px;
 }
 
 /* ===== Class Example ===== */
-.highlight { /* any element with the 'highlight' class */
-    color: #ff8800;
-    font-weight: bold;
+.highlight {
+  color: #ff8800;
+  font-weight: bold;
 }
 
 /* ===== Logo Image Styling ===== */
-img.logo { /* images that have the 'logo' class */
-    width: 212px;
-    height: 88px;
+img.logo {
+  width: 212px;
+  height: 88px;
 }
+
+/* ===== Small niceties ===== */
+.alert code { word-break: break-word; }
