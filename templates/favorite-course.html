@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Favorite Course{% endblock %}
+
+{% block content %}
+  <h1 class="mb-3">Favorite Course</h1>
+
+  {% if has_params %}
+    <p class="lead">
+      You entered your favorite course as: <strong>{{ subject }} {{ course_number }}</strong>.
+    </p>
+  {% else %}
+    <div class="alert alert-info">
+      Add query parameters to the URL like:
+      <code>?subject=BMGT&course_number=408C</code>
+    </div>
+  {% endif %}
+{% endblock %}
